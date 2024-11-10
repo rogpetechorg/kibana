@@ -1,5 +1,5 @@
-server.host: "${KIBANA_HOST:0.0.0.0}"
-elasticsearch.hosts: ["${ELASTICSEARCH_HOSTS:http://elasticsearch:9200}"]
+elasticsearch.hosts: [ "${ELASTICSEARCH_HOSTS}" ]
 elasticsearch.username: "${ELASTICSEARCH_USERNAME:elastic}"
 elasticsearch.password: "${ELASTICSEARCH_PASSWORD:changeme}"
+elasticsearch.serviceAccountToken: "${ELASTICSEARCH_SERVICE_TOKEN}"
 elasticsearch.ssl.certificateAuthorities: "/etc/ssl/certs/ca-certificates.crt"
