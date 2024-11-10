@@ -2,4 +2,11 @@ elasticsearch.hosts: [ "${ELASTICSEARCH_HOSTS}" ]
 elasticsearch.username: "${ELASTICSEARCH_USERNAME:elastic}"
 elasticsearch.password: "${ELASTICSEARCH_PASSWORD:changeme}"
 elasticsearch.serviceAccountToken: "${ELASTICSEARCH_SERVICE_TOKEN}"
+xpack.encryptedSavedObjects.encryptionKey: 6c20ec7d8d238746d7b9c4c46f9229ef
+xpack.reporting.encryptionKey: 0819913bf5ccf3e6568c2032083c198e
+xpack.security.encryptionKey: a995ced62ed061863657ae0ee8f150a1
+xpack.elastic_assistant.enabled: false
+
 elasticsearch.ssl.certificateAuthorities: "/etc/ssl/certs/ca-certificates.crt"
+server.ssl.enabled: true
+server.ssl.certificate: "/etc/ssl/certs/ca-certificates.crt"
